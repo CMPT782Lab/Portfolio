@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Attach click on entire card (fallback for buttons)
     card.addEventListener("click", (e) => {
-    
+      openProject(idx);
     });
 
     // Attach button click if present
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btn) {
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
-        
+        openProject(idx);
       });
     }
 
